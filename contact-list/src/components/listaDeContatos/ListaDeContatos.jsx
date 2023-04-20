@@ -49,7 +49,12 @@ export const ListaDeContatos = () => {
     setListaContato([])
     // localStorage.removeItem('meus_contato')
   }
-  // console.log(contato);
+  
+  function deletarContato(ctRemover) {
+    setListaContato(listaContato.filter((item) => item.nome !== ctRemover.nome && item.fone !== ctRemover.fone))
+    // console.log(ctRemover);
+  }
+
   return (
     <div>
       <h1>Minha lista de contatos</h1>
@@ -66,7 +71,12 @@ export const ListaDeContatos = () => {
       <button onClick={deletarLista}>Deletar Contatos</button>
       <hr />
       {/* render lista de contatos */}
-      {listaContato.map((item, index) => <div key={index}>Nome: {item.nome} - Fone: {item.fone}</div>)}
+      {listaContato.map((item, index) => (
+      <div key={index}>
+        Nome: {item.nome} - Fone: {item.fone}
+        <button onClick={() => deletarContato({nome: item.nome, fone: item.fone})}>Deletar contato</button> 
+        </div>
+        ))}
     </div>
   )
 }

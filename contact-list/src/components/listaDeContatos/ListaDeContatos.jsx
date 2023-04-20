@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 export const ListaDeContatos = () => {
   const [contato, setContato] = useState({nome: '', fone: ''})
@@ -23,6 +23,20 @@ export const ListaDeContatos = () => {
     setContato({nome: '', fone: ''})
     inputFocusRefNome.current.focus()
   }
+
+  // persistência do state:
+  // carregar a lista de contatos do localStorage
+    useEffect(() => {
+      if(localStorage.getItem('meus_contatos') !== null) {
+        setListaContato(JSON.parse(localStorage.getItem('meus_contatos')));
+      }
+    }, [])
+
+  // atualizar a lista de contatos no localStorage
+  useEffect(() => {
+    localStorage.setItem('meus_contatos', JSON.stringify(listaContato));
+  }, [listaContato])
+
   
   function enterAdicionarContato(event) {
     if(event.code === "Enter") {

@@ -44,6 +44,11 @@ export const ListaDeContatos = () => {
     }
     // console.log(event.code)
   }
+
+  function deletarLista() {
+    setListaContato([])
+    // localStorage.removeItem('meus_contato')
+  }
   // console.log(contato);
   return (
     <div>
@@ -58,6 +63,7 @@ export const ListaDeContatos = () => {
         <input  ref={inputFocusRefFone} type="text" onChange={(e) => setContato({...contato, fone: e.target.value})} onKeyUp={enterAdicionarContato} value={contato.fone} />
       </div>
       <button onClick={adicionarLista}>Adicionar Contato</button>
+      <button onClick={deletarLista}>Deletar Contatos</button>
       <hr />
       {/* render lista de contatos */}
       {listaContato.map((item, index) => <div key={index}>Nome: {item.nome} - Fone: {item.fone}</div>)}

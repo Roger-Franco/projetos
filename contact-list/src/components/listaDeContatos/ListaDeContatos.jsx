@@ -1,12 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react'
 
 export const ListaDeContatos = () => {
-  const [contato, setContato] = useState({nome: '', fone: ''})
+  const [contato, setContato] = useState({id: '', nome: '', fone: ''})
   const [listaContato, setListaContato] = useState([])
   const inputFocusRefNome = useRef()
   const inputFocusRefFone = useRef()
 
   const adicionarLista = () => {
+    // setContato(...contato, {id: Math.random()})
     // verificar se esta vazio
     if (contato.nome === '' || contato.fone === '') return
 
@@ -19,7 +20,7 @@ export const ListaDeContatos = () => {
       return
     } 
     
-    setListaContato([...listaContato, contato])
+    setListaContato([...listaContato, {...contato, id: Math.random()}])
     setContato({nome: '', fone: ''})
     inputFocusRefNome.current.focus()
   }
@@ -47,13 +48,13 @@ export const ListaDeContatos = () => {
 
   function deletarLista() {
     setListaContato([])
-    // localStorage.removeItem('meus_contato')
+    // localStorage.removeItem('meus_contatos')
   }
   
-  function deletarContato(ctRemover) {
-    setListaContato(listaContato.filter((item) => item.nome !== ctRemover.nome && item.fone !== ctRemover.fone))
-    // console.log(ctRemover);
+  function deletarContato(id) {
+    setListaContato(listaContato.filter((item) => item.id !== id))
   }
+
 
   return (
     <div>
@@ -74,7 +75,7 @@ export const ListaDeContatos = () => {
       {listaContato.map((item, index) => (
       <div key={index}>
         Nome: {item.nome} - Fone: {item.fone}
-        <button onClick={() => deletarContato({nome: item.nome, fone: item.fone})}>Deletar contato</button> 
+        <button onClick={() => deletarContato(item.id)}>Deletar contato</button> 
         </div>
         ))}
     </div>

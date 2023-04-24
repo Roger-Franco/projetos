@@ -40,3 +40,6 @@ nest g controller city => criando o controller do city
 nest g service city => criando o service do city
 
 npm install @nestjs/cache-manager cache-manager => 
+
+nest g module cache => criando o modulo de cache
+nest g service cache => criando o service de cache

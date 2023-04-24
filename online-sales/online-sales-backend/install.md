@@ -36,3 +36,7 @@ nest g module address => criando o modulo de address
 
 nest g controller state => criando o controller do state
 nest g service state => criando o service do state
+nest g controller city => criando o controller do city
+nest g service city => criando o service do city
+
+npm install @nestjs/cache-manager cache-manager => 

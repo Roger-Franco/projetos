@@ -45,3 +45,7 @@ nest g module cache => criando o modulo de cache
 nest g service cache => criando o service de cache
 
 npm i --save class-validator class-transformer => Validações
+
+
+nest g controller address => criando o controller do address
+nest g service address => criando o service do address

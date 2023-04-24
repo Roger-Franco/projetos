@@ -43,3 +43,5 @@ npm install @nestjs/cache-manager cache-manager =>
 
 nest g module cache => criando o modulo de cache
 nest g service cache => criando o service de cache
+
+npm i --save class-validator class-transformer => Validações

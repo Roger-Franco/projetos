@@ -14,7 +14,7 @@ export class CityEntity {
   stateId: number;
 
   @Column({ name: 'name', nullable: true })
-  complement: string;
+  name: string;
 
   @CreateDateColumn({ name: 'created_at' })
   createdAt: Date;

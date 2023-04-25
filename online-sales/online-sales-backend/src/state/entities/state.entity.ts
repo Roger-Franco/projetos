@@ -13,7 +13,7 @@ export class StateEntity {
   id: number;
 
   @Column({ name: 'name', nullable: true })
-  complement: string;
+  name: string;
 
   @CreateDateColumn({ name: 'created_at' })
   createdAt: Date;

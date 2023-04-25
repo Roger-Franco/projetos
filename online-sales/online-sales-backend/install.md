@@ -56,3 +56,6 @@ npm install --save-dev @types/passport-local
 nest g module auth
 nest g service auth
 nest g controller auth
+
+npm install --save @nestjs/jwt passport-jwt
+npm install --save-dev @types/passport-jwt

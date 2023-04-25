@@ -33,7 +33,6 @@ export class RolesGuard implements CanActivate {
     if (!loginPayload) {
       return false;
     }
-    console.log(authorization, 'authorization');
 
     return requiredRoles.some((role) => role === loginPayload.typeUser);
   }

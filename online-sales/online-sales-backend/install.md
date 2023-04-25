@@ -49,3 +49,10 @@ npm i --save class-validator class-transformer => Validações
 
 nest g controller address => criando o controller do address
 nest g service address => criando o service do address
+
+npm install --save @nestjs/passport passport passport-local
+npm install --save-dev @types/passport-local
+
+nest g module auth
+nest g service auth
+nest g controller auth

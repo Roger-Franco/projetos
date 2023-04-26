@@ -8,9 +8,19 @@ const app = express()
 
 const conn = require('./db/conn')
 
+// Models
+const Ideia = require('./models/Ideia')
+const User = require('./models/User')
+
 // template engine
 app.engine('handlebars', exphbs.engine())
 app.set('view engine', 'handlebars')
+
+// import Routes
+const ideiasRoutes = require('./routes/ideiasRoutes')
+
+// import controller
+const IdeiaController = require('./controllers/IdeiaController')
 
 // receber resposta do body
 app.use(express.urlencoded({extended: true}))
@@ -49,8 +59,15 @@ app.use((req, res,  next) => {
   next()
 })
 
+// Routes
+app.use('/ideias', ideiasRoutes)
+app.get('/', IdeiaController.showIdeias)
 
 
-conn.sync().then(() => {
+
+conn
+// .sync({force: true})
+.sync()
+.then(() => {
   app.listen(3030)
 }).catch((err) => console.log(err))

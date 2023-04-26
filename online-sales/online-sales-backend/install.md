@@ -59,3 +59,5 @@ nest g controller auth
 
 npm install --save @nestjs/jwt passport-jwt
 npm install --save-dev @types/passport-jwt
+
+npx typeorm migration:create ./src/migration/alter_table_user => migrations

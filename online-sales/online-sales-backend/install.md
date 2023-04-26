@@ -40,3 +40,24 @@ nest g controller city => criando o controller do city
 nest g service city => criando o service do city
 
 npm install @nestjs/cache-manager cache-manager => 
+
+nest g module cache => criando o modulo de cache
+nest g service cache => criando o service de cache
+
+npm i --save class-validator class-transformer => Validações
+
+
+nest g controller address => criando o controller do address
+nest g service address => criando o service do address
+
+npm install --save @nestjs/passport passport passport-local
+npm install --save-dev @types/passport-local
+
+nest g module auth
+nest g service auth
+nest g controller auth
+
+npm install --save @nestjs/jwt passport-jwt
+npm install --save-dev @types/passport-jwt
+
+npx typeorm migration:create ./src/migration/alter_table_user => migrations

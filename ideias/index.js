@@ -18,7 +18,7 @@ app.set('view engine', 'handlebars')
 
 // import Routes
 const ideiasRoutes = require('./routes/ideiasRoutes')
-const authRoutes = require('./routes/authoRoutes')
+const authRoutes = require('./routes/authRoutes')
 
 // import controller
 const IdeiaController = require('./controllers/IdeiaController')

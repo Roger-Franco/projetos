@@ -6,4 +6,7 @@ module.exports = class IdeiaController {
   static async showIdeias(req, res) {
     res.render('ideias/home')
   }
+  static async dashboard(rea, res) {
+    res.render('ideias/dashboard')
+  }
 }

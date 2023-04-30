@@ -8,7 +8,29 @@ module.exports = class IdeiaController {
   }
   
   static async dashboard(req, res) {
-    res.render('ideias/dashboard')
+    const userId = req.session.userid
+
+    const user = await User.findOne({
+      where: {
+        id: userId,
+      },
+      include: Ideia,
+      plain: true
+    })
+    // check if user exists
+    if(!user) {
+      res.redirect('/login')
+    }
+
+    const ideias = user.Ideia.map((result) => result.dataValues)
+
+
+    console.log(ideias, 'ideias');
+    // console.log(user.Ideia[0].dataValues.title);
+    // console.log(user.Ideia);
+
+    // const ideias = await Ideia.findOne({where : {UserId: userId }})
+    res.render('ideias/dashboard', {ideias})
   }
 
   static createIdeia(req, res) {

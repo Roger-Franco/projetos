@@ -1,4 +1,4 @@
-<div class="dasboard">
+<div class="dashboard">
   <div class="title-container">
     <h2>Dashboard</h2>
     <a href="/ideias/add" class="btn">Criar Pensamento</a>
@@ -6,7 +6,16 @@
   <h3>Seus pensamentos</h3>
   <ul>
   {{#each ideias}}
-    <li>{{this.title}}</li>
+    <li>
+      <span class="label">{{this.title}}</span>
+      <span class="actions">
+        <a href="/" class="btn">Editar</a>
+        <form action="/">
+          <input type="hidden" name="id" value={{this.id}}>
+          <input type="submit" value="Excluir" class="btn">
+        </form>
+      </span>
+    </li>
   {{/each}}
   </ul>
 </div>

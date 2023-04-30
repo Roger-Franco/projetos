@@ -25,10 +25,6 @@ module.exports = class IdeiaController {
     const ideias = user.Ideia.map((result) => result.dataValues)
 
 
-    console.log(ideias, 'ideias');
-    // console.log(user.Ideia[0].dataValues.title);
-    // console.log(user.Ideia);
-
     // const ideias = await Ideia.findOne({where : {UserId: userId }})
     res.render('ideias/dashboard', {ideias})
   }

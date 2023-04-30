@@ -11,7 +11,30 @@ module.exports = class IdeiaController {
     res.render('ideias/dashboard')
   }
 
-  static async createIdeia(req, res) {
+  static createIdeia(req, res) {
     res.render('ideias/create')
+  }
+
+  static async createIdeiaPost(req, res) {
+
+    const {title} = req.body
+
+    const ideia = {
+      title: req.body.title,
+      UserId: req.session.userid
+    }
+    try {
+      
+      await Ideia.create(ideia)
+  
+      req.flash('message', 'Pensamento criado com sucesso!')
+  
+      req.session.save(() => {
+        res.redirect('/ideias/dashboard')
+      })
+    
+    } catch (error) {
+      console.log('Aconteceu um erro ' + error);
+    }
   }
 }

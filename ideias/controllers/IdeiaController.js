@@ -34,9 +34,9 @@ module.exports = class IdeiaController {
   }
 
   static async createIdeiaPost(req, res) {
-
+    
     const {title} = req.body
-
+    
     const ideia = {
       title: req.body.title,
       UserId: req.session.userid
@@ -51,6 +51,24 @@ module.exports = class IdeiaController {
         res.redirect('/ideias/dashboard')
       })
     
+    } catch (error) {
+      console.log('Aconteceu um erro ' + error);
+    }
+  }
+
+  static async deleteIdeia(req, res) {
+    const id = req.body.id
+
+    const UserId = req.session.userid
+
+    try {
+      await Ideia.destroy({where: {id: id, UserId: UserId}})
+      req.flash('message', 'Pensamento removido com sucesso!')
+  
+      req.session.save(() => {
+        res.redirect('/ideias/dashboard')
+      })
+      
     } catch (error) {
       console.log('Aconteceu um erro ' + error);
     }

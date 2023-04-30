@@ -6,6 +6,7 @@ const router = express.Router()
 // const checkAuth = require('../helpers/auth').checkAuth
 const {checkAuth} = require('../helpers/auth')
 
+router.get('/add', checkAuth, IdeiaController.createIdeia)
 router.get('/dashboard', checkAuth, IdeiaController.dashboard)
 router.get('/', IdeiaController.showIdeias)
 

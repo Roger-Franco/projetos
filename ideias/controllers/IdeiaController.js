@@ -24,9 +24,14 @@ module.exports = class IdeiaController {
 
     const ideias = user.Ideia.map((result) => result.dataValues)
 
+    let emptyIdeias = false
+
+    if(ideias.length === 0 ) {
+      emptyIdeias = true
+    }
 
     // const ideias = await Ideia.findOne({where : {UserId: userId }})
-    res.render('ideias/dashboard', {ideias})
+    res.render('ideias/dashboard', {ideias, emptyIdeias})
   }
 
   static createIdeia(req, res) {

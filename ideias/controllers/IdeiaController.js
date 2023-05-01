@@ -78,4 +78,14 @@ module.exports = class IdeiaController {
       console.log('Aconteceu um erro ' + error);
     }
   }
+
+  static async updateIdeia(req, res) {
+    const id = req.params.id
+
+    const ideia = await Ideia.findOne({ where: {id: id }, raw: true})
+
+    // console.log(ideia, 'ideia-edit');
+
+    res.render('ideias/edit', {ideia})
+  }
 }

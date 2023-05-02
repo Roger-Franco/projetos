@@ -4,7 +4,11 @@ const User = require('../models/User')
 
 module.exports = class IdeiaController {
   static async showIdeias(req, res) {
-    res.render('ideias/home')
+    const ideiasData = await Ideia.findAll({include: User})
+
+    const ideias = ideiasData.map((result) => result.get({plain: true}))
+
+    res.render('ideias/home', {ideias})
   }
   
   static async dashboard(req, res) {

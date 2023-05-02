@@ -1,14 +1,41 @@
 const Ideia = require('../models/Ideia')
 const User = require('../models/User')
 
+const {Op} = require('sequelize')
+
 
 module.exports = class IdeiaController {
   static async showIdeias(req, res) {
-    const ideiasData = await Ideia.findAll({include: User})
+
+    let search = ''
+    if(req.query.search) {
+      search = req.query.search
+    }
+
+    let order = 'DESC'
+
+    if (req.query.order === 'old') {
+      order = 'ASC'
+    } else {
+      order = 'DESC'
+    }
+
+    const ideiasData = await Ideia.findAll({
+      include: User,
+      where: {
+        title: {[Op.like]: `%${search}%`}
+      },
+      order: [['createdAt', order]]
+    })
 
     const ideias = ideiasData.map((result) => result.get({plain: true}))
 
-    res.render('ideias/home', {ideias})
+    let ideiasQty = ideias.length
+    if (ideiasQty === 0) {
+      ideiasQty = false
+    }
+
+    res.render('ideias/home', {ideias, search, ideiasQty})
   }
   
   static async dashboard(req, res) {

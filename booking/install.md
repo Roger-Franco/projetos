@@ -5,11 +5,11 @@
 Commits:
 1: Hello World;
 2: Primeiras rotas com React-router-dom;
+3: Navbar Design;
 
 
 https://www.youtube.com/watch?v=RkWpJ4XUHuw&list=PLj-4DlPRT48kt3lNPCPu38Q0ta99ganMI&ab_channel=LamaDev
 
-06:45 Navbar Design
 11:30 Header Design
 18:25 React Advanced Search Bar Design with a Calendar
 42:28 Homepage Lists

@@ -5,6 +5,8 @@
 * yarn add @fortawesome/free-solid-svg-icons
 yarn add @fortawesome/free-regular-svg-icons
 * yarn add @fortawesome/react-fontawesome@latest
+* yarn add react-date-range
+* yarn add date-fns  (precisei instalar isso aqui por causa do pacote anterior)
 
 
 
@@ -13,12 +15,12 @@ Commits:
 2: Primeiras rotas com React-router-dom;
 3: Navbar Design;
 4: Header Design;
+5: React Advanced Search Bar Design with a Calendar;
 
 
 https://www.youtube.com/watch?v=RkWpJ4XUHuw&list=PLj-4DlPRT48kt3lNPCPu38Q0ta99ganMI&ab_channel=LamaDev
 
 
-18:25 React Advanced Search Bar Design with a Calendar
 42:28 Homepage Lists
 56:50 Email List Component
 01:00:43 React Footer Design

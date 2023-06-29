@@ -18,12 +18,12 @@ Commits:
 5: React Advanced Search Bar Design with a Calendar;
 6: Homepage Lists;
 7: Email List Component;
+8: React Footer Design;
 
 
 https://www.youtube.com/watch?v=RkWpJ4XUHuw&list=PLj-4DlPRT48kt3lNPCPu38Q0ta99ganMI&ab_channel=LamaDev
 
 
-01:00:43 React Footer Design
 01:04:04 Search Result List Page
 01:30:10 Hotel Page Design
 01:42:30 React Slider Without any Library

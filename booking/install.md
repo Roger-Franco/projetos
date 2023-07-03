@@ -21,10 +21,7 @@ Commits:
 8: React Footer Design;
 9: Search Result List Page;
 10: Hotel Page Design;
+11: React Slider Without any Library;
 
 
 https://www.youtube.com/watch?v=RkWpJ4XUHuw&list=PLj-4DlPRT48kt3lNPCPu38Q0ta99ganMI&ab_channel=LamaDev
-
-
-01:42:30 React Slider Without any Library
-01:53:38 Outro

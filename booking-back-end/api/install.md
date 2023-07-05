@@ -12,10 +12,10 @@ https://www.youtube.com/watch?v=k3Vfj-e1Ma4&list=PLj-4DlPRT48kt3lNPCPu38Q0ta99ga
 commits:
 1: Installation;
 2: Node.js MongoDB Connection;
+3: Create Your First API using Node.js;
 
 <!-- ================= -->
 
-11:54 Create Your First API using Node.js
 18:07 Node.js MongoDB CRUD Operations
 32:40 Node.js Express Understanding Middleware
 36:24 Node.js Express Error Handling Best Practice

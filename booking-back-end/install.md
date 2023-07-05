@@ -1,7 +1,9 @@
 npm init -y;
 yarn add express;
 "type": "module", coloquei essa linha no arquivo json para aceitar import ao inves de require;
-yarn add nodemon
+yarn add nodemon;
+yarn add dotenv;
+yarn add mongoose;
 
 
 https://www.youtube.com/watch?v=k3Vfj-e1Ma4&list=PLj-4DlPRT48kt3lNPCPu38Q0ta99ganMI&index=2
@@ -9,10 +11,10 @@ https://www.youtube.com/watch?v=k3Vfj-e1Ma4&list=PLj-4DlPRT48kt3lNPCPu38Q0ta99ga
 
 commits:
 1: Installation;
+2: Node.js MongoDB Connection;
 
 <!-- ================= -->
 
-05:27 Node.js MongoDB Connection
 11:54 Create Your First API using Node.js
 18:07 Node.js MongoDB CRUD Operations
 32:40 Node.js Express Understanding Middleware

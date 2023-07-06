@@ -13,10 +13,10 @@ commits:
 1: Installation;
 2: Node.js MongoDB Connection;
 3: Create Your First API using Node.js;
+4: Node.js MongoDB CRUD Operations;
 
 <!-- ================= -->
 
-18:07 Node.js MongoDB CRUD Operations
 32:40 Node.js Express Understanding Middleware
 36:24 Node.js Express Error Handling Best Practice
 42:19 Node MongoDB Authentication (Login / Register)

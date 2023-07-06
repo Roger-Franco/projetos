@@ -14,11 +14,10 @@ commits:
 2: Node.js MongoDB Connection;
 3: Create Your First API using Node.js;
 4: Node.js MongoDB CRUD Operations;
+5: Node.js Express Error Handling Best Practice;
 
 <!-- ================= -->
 
-32:40 Node.js Express Understanding Middleware
-36:24 Node.js Express Error Handling Best Practice
 42:19 Node MongoDB Authentication (Login / Register)
 56:47 How to Use JWT with Cookie in Node.js 
 01:01:45 Node.js JWT Role-Based Authorization Verification

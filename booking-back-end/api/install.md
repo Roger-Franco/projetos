@@ -4,6 +4,7 @@ yarn add express;
 yarn add nodemon;
 yarn add dotenv;
 yarn add mongoose;
+yarn add bcryptjs;
 
 
 https://www.youtube.com/watch?v=k3Vfj-e1Ma4&list=PLj-4DlPRT48kt3lNPCPu38Q0ta99ganMI&index=2
@@ -15,10 +16,10 @@ commits:
 3: Create Your First API using Node.js;
 4: Node.js MongoDB CRUD Operations;
 5: Node.js Express Error Handling Best Practice;
+6: Node MongoDB Authentication (Login / Register);
 
 <!-- ================= -->
 
-42:19 Node MongoDB Authentication (Login / Register)
 56:47 How to Use JWT with Cookie in Node.js 
 01:01:45 Node.js JWT Role-Based Authorization Verification
 01:13:54 Node MongoDB Model Relations

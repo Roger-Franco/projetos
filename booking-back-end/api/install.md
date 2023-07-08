@@ -23,10 +23,10 @@ commits:
 6: Node MongoDB Authentication (Login / Register);
 7: How to Use JWT with Cookie in Node.js;
 8: Node.js JWT Role-Based Authorization Verification;
+9: Node MongoDB Model Relations;
 
 <!-- ================= -->
 
-01:13:54 Node MongoDB Model Relations
 01:25:28 Installing React App
 01:27:44 Node MongoDB How to get Count of Documents
 01:32:33 How to Fetch Data using a Custom Hook

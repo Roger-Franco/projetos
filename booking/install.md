@@ -29,10 +29,10 @@ commits:
 8: Node.js JWT Role-Based Authorization Verification;
 9: Node MongoDB Model Relations;
 10: Installing React App;
+11: Node MongoDB How to get Count of Documents;
 
 <!-- ================= -->
 
-01:27:44 Node MongoDB How to get Count of Documents
 01:32:33 How to Fetch Data using a Custom Hook
 01:39:00 React Fetch Data from Node Express API
 01:51:21 React Search using a Backend API

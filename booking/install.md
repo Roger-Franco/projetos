@@ -1,27 +1,44 @@
-* git clone --single-branch -b "react-mini" https://github.com/safak/youtube2022.git . (Instala o clone somente de uma branch);
-* rm -rf .git  (remove o git que veio junto com o clone);
-* react-router-dom
-* yarn add @fortawesome/fontawesome-svg-core
-* yarn add @fortawesome/free-solid-svg-icons
-yarn add @fortawesome/free-regular-svg-icons
-* yarn add @fortawesome/react-fontawesome@latest
-* yarn add react-date-range
-* yarn add date-fns  (precisei instalar isso aqui por causa do pacote anterior)
+Api:
+npm init -y;
+yarn add express;
+"type": "module", coloquei essa linha no arquivo json para aceitar import ao inves de require;
+yarn add nodemon;
+yarn add dotenv;
+yarn add mongoose;
+yarn add bcryptjs;
+yarn add jsonwebtoken;
+openssl rand -base64 32 => isso te da uma senha aleatória;
+yarn add cookie-parser;
+
+Client: 
+git clone --single-branch -b "react-booking-ui" https://github.com/safak/youtube2022.git .
 
 
 
-Commits:
-1: Hello World;
-2: Primeiras rotas com React-router-dom;
-3: Navbar Design;
-4: Header Design;
-5: React Advanced Search Bar Design with a Calendar;
-6: Homepage Lists;
-7: Email List Component;
-8: React Footer Design;
-9: Search Result List Page;
-10: Hotel Page Design;
-11: React Slider Without any Library;
+https://www.youtube.com/watch?v=k3Vfj-e1Ma4&list=PLj-4DlPRT48kt3lNPCPu38Q0ta99ganMI&index=2
 
 
-https://www.youtube.com/watch?v=RkWpJ4XUHuw&list=PLj-4DlPRT48kt3lNPCPu38Q0ta99ganMI&ab_channel=LamaDev
+commits:
+1: Installation;
+2: Node.js MongoDB Connection;
+3: Create Your First API using Node.js;
+4: Node.js MongoDB CRUD Operations;
+5: Node.js Express Error Handling Best Practice;
+6: Node MongoDB Authentication (Login / Register);
+7: How to Use JWT with Cookie in Node.js;
+8: Node.js JWT Role-Based Authorization Verification;
+9: Node MongoDB Model Relations;
+10: Installing React App;
+
+<!-- ================= -->
+
+01:27:44 Node MongoDB How to get Count of Documents
+01:32:33 How to Fetch Data using a Custom Hook
+01:39:00 React Fetch Data from Node Express API
+01:51:21 React Search using a Backend API
+01:58:43 Reach Fetch using URL Location
+02:02:46 How to Use React Context API
+02:14:17 React Login Auth Context API
+02:26:33 React Hotel Reservation Component
+02:55:48 React Node Admin CRUD Operations
+04:48:26 Outro

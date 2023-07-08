@@ -9,9 +9,11 @@ yarn add bcryptjs;
 yarn add jsonwebtoken;
 openssl rand -base64 32 => isso te da uma senha aleatória;
 yarn add cookie-parser;
+yarn add cors;
 
 Client: 
 git clone --single-branch -b "react-booking-ui" https://github.com/safak/youtube2022.git .
+yarn add axios
 
 
 
@@ -30,10 +32,10 @@ commits:
 9: Node MongoDB Model Relations;
 10: Installing React App;
 11: Node MongoDB How to get Count of Documents;
+12: How to Fetch Data using a Custom Hook;
 
 <!-- ================= -->
 
-01:32:33 How to Fetch Data using a Custom Hook
 01:39:00 React Fetch Data from Node Express API
 01:51:21 React Search using a Backend API
 01:58:43 Reach Fetch using URL Location

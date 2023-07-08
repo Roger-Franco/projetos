@@ -1,3 +1,4 @@
+Api:
 npm init -y;
 yarn add express;
 "type": "module", coloquei essa linha no arquivo json para aceitar import ao inves de require;
@@ -8,6 +9,9 @@ yarn add bcryptjs;
 yarn add jsonwebtoken;
 openssl rand -base64 32 => isso te da uma senha aleatória;
 yarn add cookie-parser;
+
+Client: 
+git clone --single-branch -b "react-booking-ui" https://github.com/safak/youtube2022.git .
 
 
 
@@ -24,10 +28,10 @@ commits:
 7: How to Use JWT with Cookie in Node.js;
 8: Node.js JWT Role-Based Authorization Verification;
 9: Node MongoDB Model Relations;
+10: Installing React App;
 
 <!-- ================= -->
 
-01:25:28 Installing React App
 01:27:44 Node MongoDB How to get Count of Documents
 01:32:33 How to Fetch Data using a Custom Hook
 01:39:00 React Fetch Data from Node Express API

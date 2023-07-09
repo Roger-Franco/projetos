@@ -37,10 +37,10 @@ commits:
 14: React Search using a Backend API;
 15: Reach Fetch using URL Location;
 16: How to Use React Context API;
+17: React Login Auth Context API;
 
 <!-- ================= -->
 
-02:14:17 React Login Auth Context API
 02:26:33 React Hotel Reservation Component
 02:55:48 React Node Admin CRUD Operations
 04:48:26 Outro

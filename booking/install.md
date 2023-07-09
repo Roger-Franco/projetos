@@ -35,10 +35,10 @@ commits:
 12: How to Fetch Data using a Custom Hook;
 13: React Fetch Data from Node Express API;
 14: React Search using a Backend API;
+15: Reach Fetch using URL Location;
 
 <!-- ================= -->
 
-01:58:43 Reach Fetch using URL Location
 02:02:46 How to Use React Context API
 02:14:17 React Login Auth Context API
 02:26:33 React Hotel Reservation Component

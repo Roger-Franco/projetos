@@ -36,10 +36,10 @@ commits:
 13: React Fetch Data from Node Express API;
 14: React Search using a Backend API;
 15: Reach Fetch using URL Location;
+16: How to Use React Context API;
 
 <!-- ================= -->
 
-02:02:46 How to Use React Context API
 02:14:17 React Login Auth Context API
 02:26:33 React Hotel Reservation Component
 02:55:48 React Node Admin CRUD Operations

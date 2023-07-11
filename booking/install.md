@@ -16,7 +16,7 @@ git clone --single-branch -b "react-booking-ui" https://github.com/safak/youtube
 yarn add axios
 
 
-
+https://www.youtube.com/watch?v=RkWpJ4XUHuw&list=PLj-4DlPRT48kt3lNPCPu38Q0ta99ganMI&ab_channel=LamaDev
 https://www.youtube.com/watch?v=k3Vfj-e1Ma4&list=PLj-4DlPRT48kt3lNPCPu38Q0ta99ganMI&index=2
 
 
@@ -38,9 +38,9 @@ commits:
 15: Reach Fetch using URL Location;
 16: How to Use React Context API;
 17: React Login Auth Context API;
+18: React Hotel Reservation Component;
 
 <!-- ================= -->
 
-02:26:33 React Hotel Reservation Component
 02:55:48 React Node Admin CRUD Operations
 04:48:26 Outro

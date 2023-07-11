@@ -15,6 +15,9 @@ Client:
 git clone --single-branch -b "react-booking-ui" https://github.com/safak/youtube2022.git .
 yarn add axios
 
+Admin:
+git clone --single-branch -b "react-admin" https://github.com/safak/youtube2022.git .
+
 
 https://www.youtube.com/watch?v=RkWpJ4XUHuw&list=PLj-4DlPRT48kt3lNPCPu38Q0ta99ganMI&ab_channel=LamaDev
 https://www.youtube.com/watch?v=k3Vfj-e1Ma4&list=PLj-4DlPRT48kt3lNPCPu38Q0ta99ganMI&index=2

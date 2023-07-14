@@ -8,10 +8,12 @@ const router = express.Router()
 // UPDATE
 router.put('/:id', verifyUser, updateUser)
 // DELETE
-router.delete('/:id', verifyUser, deleteUser)
+// router.delete('/:id', verifyUser, deleteUser)
+router.delete('/:id', deleteUser)
 // GET
 router.get('/:id', verifyUser, getUser)
 // GET ALL
-router.get('/', verifyAdmin, getUsers)
+// router.get('/', verifyAdmin, getUsers)
+router.get('/', getUsers) // fizo isso para aparecer os users no admin
 
 export default router

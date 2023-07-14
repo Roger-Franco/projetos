@@ -17,10 +17,15 @@ yarn add axios
 
 Admin:
 git clone --single-branch -b "react-admin" https://github.com/safak/youtube2022.git .
+yarn add axios
+https://console.cloudinary.com/console/c-86169702749a4cc24ffb2a259a6910/
 
 
 https://www.youtube.com/watch?v=RkWpJ4XUHuw&list=PLj-4DlPRT48kt3lNPCPu38Q0ta99ganMI&ab_channel=LamaDev
 https://www.youtube.com/watch?v=k3Vfj-e1Ma4&list=PLj-4DlPRT48kt3lNPCPu38Q0ta99ganMI&index=2
+
+https://www.youtube.com/watch?v=k3Vfj-e1Ma4&list=PLj-4DlPRT48kt3lNPCPu38Q0ta99ganMI&index=4
+3:25
 
 
 commits:

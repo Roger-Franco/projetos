@@ -1,0 +1,7 @@
+.temporizador{
+  display: flex;
+  font-size: 2.5rem;
+  margin: 20px 0px;
+  /* flex-direction: column; */
+  /* align-items: center; */
+}
